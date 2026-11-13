@@ -1,0 +1,21 @@
+# Secrets and local MCP credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+.cursor/mcp.json
+
+# Local chat databases and copied transcripts
+chat-history/
+**/*.vscdb
+**/*.vscdb-wal
+**/*.vscdb-shm
+**/*.vscdb-journal
+
+# Dependencies and OS junk
+node_modules/
+__pycache__/
+.venv/
+Thumbs.db
+Desktop.ini

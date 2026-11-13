@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "chrome-devtools-mcp",
+      "args": []
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "python",
+      "args": [
+        "-m",
+        "sequential_thinking"
+      ]
+    },
+    "confluence-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "confluence-mcp-server"
+      ],
+      "env": {
+        "CONF_BASE_URL": "https://itpm-wiki.mos.ru",
+        "CONF_USERNAME": "YOUR_USERNAME",
+        "CONF_TOKEN": "YOUR_CONFLUENCE_TOKEN"
+      }
+    },
+    "allure-testops": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://qap.russpass.dev/api/mcp",
+        "--header",
+        "Authorization: api-token YOUR_ALLURE_TOKEN"
+      ],
+      "env": {
+        "AUTH_TOKEN": "YOUR_ALLURE_TOKEN"
+      }
+    },
+    "jira": {
+      "command": "npx",
+      "args": ["-y", "mcp-jira-server"],
+      "env": {
+        "JIRA_BASE_URL": "https://itpm.mos.ru",
+        "JIRA_PAT": "YOUR_JIRA_TOKEN"
+      }
+    }
+  }
+}
