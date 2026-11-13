@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "chrome-devtools": {
-      "command": "chrome-devtools-mcp",
-      "args": []
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
     },
     "playwright": {
       "command": "npx",
@@ -11,11 +11,8 @@
       ]
     },
     "sequential-thinking": {
-      "command": "python",
-      "args": [
-        "-m",
-        "sequential_thinking"
-      ]
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     },
     "confluence-mcp-server": {
       "command": "npx",
